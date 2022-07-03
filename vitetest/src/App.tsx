@@ -42,6 +42,7 @@ function App() {
 
   return (
     <>
+      <img src="./static/im.jpg" alt="" />
       <AddTodo onAddTodo={handleAddTodo} />
       <TaskList
         todos={todos}
