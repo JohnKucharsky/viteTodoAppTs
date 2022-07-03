@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AddTodo from "./AddTodo";
 import TaskList from "./TaskList";
+import img from "./static/im.jpg";
 
 export type todoType = { id: number; title: string; done: boolean };
 let nextId = 3;
@@ -42,7 +43,7 @@ function App() {
 
   return (
     <>
-      <img src="./src/static/im.jpg" alt="" />
+      <img src={img} alt="" />
       <AddTodo onAddTodo={handleAddTodo} />
       <TaskList
         todos={todos}
